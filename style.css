@@ -1,0 +1,31 @@
+body
+{
+    grid: display;
+    place-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;   
+    background-color: #222222;
+    color: white;
+    user-select: none;
+}
+
+.main
+{
+    display: flex;
+    gap: 200px;
+}
+
+.left h3 
+{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+#z-img
+{
+    padding: 0;
+    margin: 0;
+    font-size: 256px;
+}
