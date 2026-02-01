@@ -12,10 +12,17 @@ body
 
 .main
 {
+    width: 100%;
+    height: 100%;
     display: flex;
     gap: 200px;
+    margin-top: 200px;
 }
-
+.upgrade
+{
+    display: flex;
+    align-items: center;
+}
 .left h3 
 {
     text-align: center;
@@ -28,4 +35,15 @@ body
     padding: 0;
     margin: 0;
     font-size: 256px;
+}
+
+.item
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.item p 
+{
+    margin: 5px;
 }

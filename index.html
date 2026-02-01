@@ -10,28 +10,93 @@
                 
                 <div class = "left">
                     <h3>Z-coins: <span id = "z-count">550</span></h3>
-                        <p id = "z-img" onclick = "AddGold()" draggable = "false">Z</p>
+                        <p id = "z-img" onclick = "AddZ()" draggable = "false">Z</p>
                 </div>
 
-                <div class = "right">
-                    <div class = "upgrade">
-                        <div class = "left-section">
-                            
-                        </div>
-                        <div class = "mid-section">
-                            <h4>Clicker</h4>
-                            <div>
-                                <p>Cost: <span id = "clicker-upgrade-price">10</span></p>
-                                <img src = "./assets/clicker.jpg" onclick = "UpgradeClick()">
-                            </div>
-                            <h4>ZPC</h4>
-                            <div>
-                                <p>Cost: <span id = "zpc-upgrade-price">10</span></p>
-                                <img src = "./assets/clicker.jpg" onclick = "BuyZCP()">
-                            </div>
-                        </div>
-                        <div class = "right-section"></div>
-                    </div>
+                <div class = "upgrade">
+                        <table border="1" cellpadding="10" cellspacing="0">
+                            <tr>
+                                <td onclick = "UpgradeClick()">
+                                    <div class = "item" id = "clicker-item">
+                                        <p class = "item-name">Clicker:</p>
+                                        <p class = "item-count"><span id = "clicker-item-count">0</span>.</p>
+                                        <p class = "item-cost">Cost: <span id = "clicker-upgrade-price">10</span></p>
+                                    </div>
+                                </td>
+                                <td onclick = "BuyTelev()">
+                                    <div class = "item" id = "item-telev">
+                                        <p class = "item-name">Пропоганда в телевизоре</p>
+                                        <p class = "item-count"><span id = "telev-item-count">0</span>.</p>
+                                        <p class = "item-cost">Cost: <span id = "telev-upgrade-price">25</span></p>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td onclick = "BuyInter()">
+                                    <div class = "item" id = "item-intr">
+                                        <p class = "item-name">Пропоганда в интернете</p>
+                                        <p class = "item-count"><span id = "intr-item-count">0</span>.</p>
+                                        <p class = "item-cost">Cost: <span id = "intr-upgrade-price">25</span></p>
+                                    </div>
+                                </td>
+                                <td onclick = "BuyBots()">
+                                    <div class = "item" id = "item-bots">
+                                        <p class = "item-name">Боты</p>
+                                        <p class = "item-count"><span id = "bots-item-count">0</span>.</p>
+                                        <p class = "item-cost">Cost: <span id = "bots-upgrade-price">25</span></p>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td onclick = "BuyVera()">
+                                    <div class = "item" id = "item-vera">
+                                        <p class = "item-name">Вера</p>
+                                        <p class = "item-count"><span id = "vera-item-count">0</span>.</p>
+                                        <p class = "item-cost">Cost: <span id = "vera-upgrade-price">25</span></p>
+                                    </div>
+                                </td>
+                                <td onclick = "BuyDNR()">
+                                    <div class = "item" id = "item-dnr">
+                                        <p class = "item-name">ДНР</p>
+                                        <p class = "item-count"><span id = "dnr-item-count">0</span>.</p>
+                                        <p class = "item-cost">Cost: <span id = "dnr-upgrade-price">25</span></p>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td onclick = "BuySVO()">
+                                    <div class = "item" id = "item-svo">
+                                        <p class = "item-name">СВО</p>
+                                        <p class = "item-count"><span id = "svo-item-count">0</span>.</p>
+                                        <p class = "item-cost">Cost: <span id = "svo-upgrade-price">25</span></p>
+                                    </div>
+                                </td>
+                                <td onclick = "BuyRusi()">
+                                    <div class = "item" id = "item-rusi">
+                                        <p class = "item-name">Русичи</p>
+                                        <p class = "item-count"><span id = "rusi-item-count">0</span>.</p>
+                                        <p class = "item-cost">Cost: <span id = "rusi-upgrade-price">25</span></p>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td onclick = "BuyOresh()">
+                                    <div class = "item" id = "item-oresh">
+                                        <p class = "item-name">Орешник</p>
+                                        <p class = "item-count"><span id = "oresh-item-count">0</span>.</p>
+                                        <p class = "item-cost">Cost: <span id = "oresh-upgrade-price">25</span></p>
+                                    </div>
+                                </td>
+                                <td onclick = "BuyVP()">
+                                    <div class = "item" id = "item-vp">
+                                        <p class = "item-name">Владимир Путин</p>
+                                        <p class = "item-count"><span id = "vp-item-count">0</span>.</p>
+                                        <p class = "item-cost">Cost: <span id = "vp-upgrade-price">25</span></p>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
                 </div>
 
             </div>
