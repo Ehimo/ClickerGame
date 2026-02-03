@@ -87,7 +87,7 @@ let veraPrice = document.querySelector("#vera-upgrade-price")
 let veraPriceParsed = parseFloat(veraPrice.innerHTML);
 let veraCount = document.querySelector("#vera-item-count");
 let veraCountParsed = parseFloat(veraCount.innerHTML);
-let veraZPCPerItem = 50;
+let veraZPCPerItem = 100;
 
 function BuyVera()
 {
