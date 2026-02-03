@@ -196,6 +196,15 @@ function BuyVP()
         vpPrice.innerHTML = vpPriceParsed;
     }
 }
+
+let ukraineDestroyed = false;
+
+function DestroyUkraine()
+{
+    ukraineDestroyed = true;
+    console.log("Вы успешно уничтожили Украину! Поздравляю!");
+}
+
 function AddZ()
 {
     zCoinsParsed += clickPower;
@@ -208,7 +217,11 @@ function ChangeZCoinTextByPrice(price)
     zCoins.innerHTML = Math.round(zCoinsParsed);
 }
 
-setInterval(() => {
-    zCoinsParsed += zpc / 10;
-    zCoins.innerHTML = Math.round(zCoinsParsed);
-}, 100);
+setInterval(() => 
+    {
+        if(!ukraineDestroyed)
+        {
+        zCoinsParsed += zpc / 10;
+        zCoins.innerHTML = Math.round(zCoinsParsed);
+        }
+    } , 100);
